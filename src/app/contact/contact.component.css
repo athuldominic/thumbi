@@ -1,0 +1,22 @@
+.bg-img{
+    background-image: url('../../assets/contact.jpg');
+    background-size:cover;
+    background-attachment: fixed;
+   min-height: 55em;
+    filter: blur(5px);
+    position: relative;
+
+}
+.container{
+    margin-top:150px;
+    position: absolute;
+    top: 0;
+    background-color: black;
+    right: 0;
+    left: 0;
+    padding: 25px;
+    filter: drop-shadow(5px)
+    
+    
+    
+}

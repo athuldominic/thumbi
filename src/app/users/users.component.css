@@ -1,0 +1,29 @@
+
+.bg-img{
+    background-image: url('../../assets/students.jpg');
+    background-size:cover;
+    background-attachment: fixed;
+    min-height: 55em;
+    opacity: 7;
+    
+
+}
+section{
+    margin-top: 80px
+}
+table{
+    background-color:whitesmoke ;
+    width: 80%;
+}
+table, th,td{
+    border: 2px solid black;
+    padding: 5px;
+    
+}
+table td:hover{
+    background-color:antiquewhite;
+}
+.students_list{
+    background-color: rgba(235, 235, 227, 0.287)
+}
+  

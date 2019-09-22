@@ -1,0 +1,34 @@
+<div class="bg-img">
+<div class="container">
+    <div class="row">
+        <div class="col-md-8">
+
+    <form (ngSubmit)="onSubmit(myForm)" #myForm="ngForm">
+       <legend>SignUp Form</legend>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Email address</label>
+          <input type="email"ngModel #email="ngModel" class="form-control"name="email" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" required email>
+        <p class="alert alert-danger" *ngIf="!email.valid && email.touched"> Pls write correct email</p>
+        </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1">Password</label>
+          <input type="password"ngModel class="form-control" #password="ngModel" name="password" id="exampleInputPassword1" placeholder="Password" required minlength="6">
+          <div class="alert alert-danger" *ngIf="!password.valid && password.touched">
+              <div *ngIf="!password.required">Password required</div> 
+              <div *ngIf="!password.minlength">password must be minimum {{password.requiredlength}} characters</div>
+          </div>
+        </div>
+        <div class="form-group ">
+            <label  for="exampleCheck1">Username</label>
+          <input type="text"ngModel class="form-control"name="username"#username="ngModel" placeholder="username" required>
+          <div class="alert alert-danger" *ngIf="!username.valid && username.touched">
+          <div class="alert alert-danger" *ngIf="!username.required">Username Required</div>
+        </div>
+        </div>
+        <button type="submit" class="btn btn-primary"[disabled]="!myForm.valid">Submit</button>
+      </form>
+</div>
+
+</div>
+</div>
+</div>

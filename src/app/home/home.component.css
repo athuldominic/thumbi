@@ -1,0 +1,29 @@
+/* jumbotron css   */
+.jumbotron{
+    background-image: url('../../assets/tech.jpeg');
+    background-size:cover;
+    filter: grayscale(5px);
+    color: crimson;
+     margin-bottom: 0;
+}
+.jumbotron .col{
+background-color: rgba(255, 242, 242, 0.281)
+
+}
+/* course section begins */
+.courses_bg{
+    background-image: url('../../assets/technology.jpg');
+    background-size:cover;
+    
+}
+.courses_bg .card{
+    background-color: rgba(240, 244, 248, 0.575);
+    box-sizing: border-box;
+    width: 300px;
+    border: 3px solid black
+
+}
+.courses_bg .card:hover{
+    background-color: rgba(240, 240, 228, 0.89);
+    transform: translate(10px)
+}
